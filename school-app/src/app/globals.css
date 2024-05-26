@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html {
+  @apply h-full;
+}
+
+body {
+  @apply w-full h-full p-0 m-0
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-roboto), 'Roboto', 'Capriola', 'Lato', 'sans-serif', 'Segoe UI', Oxygen;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
