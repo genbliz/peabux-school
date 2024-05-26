@@ -124,7 +124,7 @@ export async function updateTeacherApi(formData: ITeacher) {
 }
 
 export async function getTeacherByIdApi(id: string) {
-  const url = `${AppConfig.API_URL}/teachers/${id + "will"}`;
+  const url = `${AppConfig.API_URL}/teachers/${id}`;
 
   const request = await fetch(url, {
     method: "GET",
