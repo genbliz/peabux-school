@@ -25,6 +25,8 @@ async function resolveServerResponse<TSuccess>(request: Response) {
   }
 }
 
+//============ FOR STUDENTS ============//
+
 export async function createStudentApi(formData: IStudent) {
   const formFullData: IStudent = { ...formData };
 
@@ -85,7 +87,7 @@ export async function getStudentsApi() {
   return await resolveServerResponse<IStudent[]>(request);
 }
 
-//============
+//============ FOR TEACHERS ============//
 
 export async function createTeacherApi(formData: ITeacher) {
   const formFullData: ITeacher = { ...formData };
@@ -146,6 +148,8 @@ export async function getTeachersApi() {
 
   return await resolveServerResponse<ITeacher[]>(request);
 }
+
+//============ FOR DASHBOARD ============//
 
 export async function getTeachersDashboardApi() {
   const url = `${AppConfig.API_URL}/dashboard`;

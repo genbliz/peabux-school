@@ -17,8 +17,6 @@ export const metadata: Metadata = {
 export default async function TeacherDetailsPage({ params }: { params: { id: string } }) {
   const { errorMessage, resultData } = await getTeacherByIdApi(params["id"]);
 
-  console.log({ errorMessage, resultData });
-
   return (
     <PageSection>
       <PageWidthSizing maxWidth="sm">

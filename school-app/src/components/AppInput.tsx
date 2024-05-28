@@ -133,7 +133,6 @@ export const AppDateInput: IReactFC<IDateInputParams> = ({
           disabled={isDisabled === true}
           placeholder={placeholder}
           onChange={([date]) => {
-            console.log({ date });
             handleChange(date.toISOString().split("T")[0]);
           }}
           className={className01}
