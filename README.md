@@ -26,6 +26,11 @@ The server will be running on port http://localhost:3500 by default
 $ cd school-app
 $ npm install
 $ npm run dev
+```
+
+### Running Test
+
+```bash
 $ npm run test
 ```
 
